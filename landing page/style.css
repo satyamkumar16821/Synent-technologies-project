@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+
+header{
+    background-color: #111827;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+nav a:hover{
+    color: #60a5fa;
+}
+
+
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px 8%;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+    color: white;
+}
+
+.hero-text{
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+button{
+    padding: 12px 25px;
+    border: none;
+    background-color: white;
+    color: #2563eb;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #dbeafe;
+}
+
+
+
+.hero-image{
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+}
+
+.hero-image img{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 70px 8%;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.card p{
+    line-height: 1.5;
+}
+
+
+
+footer{
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1{
+        font-size: 35px;
+    }
+
+    nav{
+        margin-top: 15px;
+    }
+
+    nav a{
+        margin: 0 10px;
+    }
+
+}
